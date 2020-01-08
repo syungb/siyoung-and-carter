@@ -22,30 +22,48 @@
                  home. "}))
 
 (def photos
-  (list {:id  0
-         :src "/img/IMG_4188.jpg"}
-        {:id  1
-         :src "/img/IMG_5486.jpg"}
-        {:id  2
-         :src "/img/IMG_5605.jpg"}
-        {:id  3
-         :src "/img/IMG_5658.jpg"}
-        {:id  4
-         :src "/img/IMG_5666.jpg"}
-        {:id  5
-         :src "/img/IMG_5832.jpg"}
-        {:id  6
-         :src "/img/IMG_5849.jpg"}
-        {:id  7
-         :src "/img/IMG_5860.jpg"}
-        {:id  8
-         :src "/img/IMG_6077.jpg"}
-        {:id  9
-         :src "/img/IMG_6364.jpg"}
-        {:id  10
-         :src "/img/IMG_6626.jpg"}
-        {:id  11
-         :src "/img/IMG_6690.jpg"}))
+  (list {:id   0
+         :src  "/img/year_01.jpg"
+         :desc "Year 1, at Kensinton Market"}
+        {:id   1
+         :src  "/img/year_04.jpg"
+         :desc "Year 4, at some party"}
+        {:id   2
+         :src  "/img/year_06.jpg"
+         :desc "Year 6, working together at Tiff"}
+        {:id   3
+         :src  "/img/year_08.jpg"
+         :desc "Year 8, at Niagara Falls. On the day we got our PR status in Canada"}
+        {:id   4
+         :src  "/img/IMG_5666.jpg"
+         :desc "Year 9, at Ontario Place"}
+        {:id   5
+         :src  "/img/IMG_5860.jpg"
+         :desc "Year 11, walking to a farmer's market"}
+        {:id   6
+         :src  "/img/IMG_6077.jpg"
+         :desc "Year 9, in Busan, South Korea"}
+        {:id   7
+         :src  "/img/IMG_6804.jpg"
+         :desc "Year 10, at the Elora Gorge"}
+        {:id   8
+         :src  "/img/IMG_6833.jpg"
+         :desc "Year 10, at Prince Edward County"}
+        {:id   9
+         :src  "/img/IMG_7076.jpg"
+         :desc "Year 10, at Dundas Peak in Hamilton"}
+        {:id   10
+         :src  "/img/IMG_7283.jpg"
+         :desc "Year 10, at Letchworth State Park"}
+        {:id   11
+         :src  "/img/IMG_8380.jpg"
+         :desc "Year 11, at Marble Canyon AZ"}
+        {:id   12
+         :src  "/img/IMG_8409.jpg"
+         :desc "Year 11, at Grand Canyon"}
+        {:id   13
+         :src  "/img/IMG_8590.jpg"
+         :desc "Year 11, at Yosemite Park"}))
 
 (defn slides [n]
   (let [slides    (array-seq (.getElementsByClassName js/document "mySlides"))
@@ -59,29 +77,32 @@
 (def current-index (r/atom 0))
 
 (defn next-photo []
-  (let [current-val @current-index]
+  (let [current-val @current-index
+        numb (count photos)]
    (cond
-     (< current-val 11) (reset! current-index (inc current-val))
-     (= current-val 11) (reset! current-index 0))))
+     (= current-val (- numb 1)) (reset! current-index 0)
+     (< current-val (- numb 1)) (reset! current-index (inc current-val)))))
 
 (defn prev-photo []
-  (let [current-val @current-index]
+  (let [current-val @current-index
+        numb (count photos)]
     (cond
       (= current-val 0) (reset! current-index 11)
-      (and (> current-val 0) (< current-val 12)) (reset! current-index (dec current-val)))))
+      (and (> current-val 0) (< current-val numb)) (reset! current-index (dec current-val)))))
 
 
 (defn photo-renderer []
   [:div.slideshow-container
    (doall
      (for [photo photos]
-       (let [id  (:id  photo)
-             src (:src photo)]
+       (let [id   (:id   photo)
+             src  (:src  photo)
+             desc (:desc photo)]
          ^{:key id} [:div {:class "my-slides fade"
                            :style (when (= @current-index id) {:display :block})}
                      [:div.number--text (str id " / " (count photos))]
                      [:img {:src src}]
-                     [:div.text "Caption testing"]])))
+                     [:div.text desc]])))
    [:div.prev
     [:> IconButton {:class "pre icon_button"
                     :variant "contained"

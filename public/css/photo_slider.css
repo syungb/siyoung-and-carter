@@ -2,7 +2,6 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -14,8 +13,8 @@
 }
 
 .my-slides.fade img {
-  /*width: 100%;*/
-  max-width: 800px;
+  max-height: 558px;
+  width: auto;
 }
 
 /* Next & previous buttons */

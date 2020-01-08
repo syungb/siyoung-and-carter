@@ -16,8 +16,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+  font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -62,13 +61,13 @@ button:focus {
 **/
 
 body {
-  font-family: "DejaVu Serif", Georgia, "Times New Roman", Times, serif, "Abril Fatface", Roboto;
+  font-family: "DejaVu Serif", Georgia, "Times New Roman", Times, serif, "Abril Fatface", Roboto, sans-serif;
   margin:0 auto;
 }
 
 header,
 footer {
-  font-family: "Abril Fatface";
+  font-family: "Abril Fatface", serif;
 }
 
 h1 {
@@ -92,7 +91,6 @@ p {
 #app {
   max-width: 900px;
   margin: 50px auto;
-  /*width: 100%;*/
   border-style: solid;
   border-color: #8e8a98;
   border-width: 3px;
@@ -112,7 +110,7 @@ header {
 
 footer {
   grid-column: span 2;
-  padding: 20px 0px;
+  padding: 20px 0;
   text-align: center;
   font-size: 1.0em;
   vertical-align: middle;
@@ -143,7 +141,7 @@ span.footer__text {
 .nav_desktop {
   flex-direction: row;
   margin-top: 30px;
-  font-family: "Abril Fatface";
+  font-family: "Abril Fatface", serif;
 }
 
 .logo {
@@ -160,7 +158,7 @@ span.footer__text {
 
 .nav__links_container {
   font-size: 1.2em;
-  padding: 5px 0px;
+  padding: 5px 0;
   line-height: 2;
 }
 
@@ -213,7 +211,7 @@ ul.mobile-nav__ul--links {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
 }
 
 .main__text {
@@ -234,7 +232,6 @@ ul.mobile-nav__ul--links {
 }
 
 .text__block {
-  /*font-family: ;*/
   color: white;
   position: absolute;
   top: 50%;
@@ -291,13 +288,6 @@ h2.text-align-center {
  * OUR STORY
  */
 
-.my-slides.fade img {
-  max-height: 600px;
-  width: auto;
-  border-radius: 5px;
-  box-shadow: inset 0 0 20px 10px rgba(0,0,0,0.6);
-}
-
 .our_story__text {
   width: 70%;
   margin: auto;
@@ -321,7 +311,7 @@ h2.text-align-center {
 }
 
 /* MOBILE MENU */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 800px) {
 
   h1 {
     font-size: 30px;
@@ -357,7 +347,7 @@ h2.text-align-center {
   }
 
   .mobile-nav__links_container {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
   }
 
   .mobile-menu__link {
@@ -393,7 +383,7 @@ h2.text-align-center {
     border-bottom-color: #717171;
     letter-spacing: 2px;
     text-transform: uppercase;
-    max-height: 0px;
+    max-height: 0;
   }
 
   ul.mobile-nav__ul--links.menu-open {
@@ -419,15 +409,35 @@ h2.text-align-center {
     font-size: 12px;
   }
 
-
   .main {
     margin: 10px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
   }
 
   iframe.rsvp__form {
     top: 0;
     left:0;
     width: 100%;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    /*width: auto;*/
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .my-slides {
+    display: none;
+    text-align: center;
+  }
+
+  .my-slides.fade img {
+    max-width: 100%;
+  }
+
+  svg.dot_icon {
+    font-size: 0.9rem;
   }
 }

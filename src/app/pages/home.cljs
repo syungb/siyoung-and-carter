@@ -6,7 +6,7 @@
   []
   [:div.image_renderer
    [:img {:class "image_renderer__img"
-          :src "/img/main_photo.png"
+          :src "/img/main_photo.jpg"
           :alt "Carter and Siyoung in Yosemite 2019"}]
    [:div.text__block
     [:h2.text-align-center.date "Saturday, May 16th, 2020"]
