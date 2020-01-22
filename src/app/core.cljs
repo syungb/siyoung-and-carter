@@ -41,7 +41,7 @@
   (defroute "/ceremony" []
     (swap! app-state assoc :page :ceremony))
 
-  (defroute "/visiting-toronto" []
+  (defroute "/toronto" []
     (swap! app-state assoc :page :toronto))
 
   (defroute "/rsvp" []
