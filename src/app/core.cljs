@@ -6,6 +6,7 @@
     [app.pages.our-story :refer [our-story]]
     [app.pages.ceremony :refer [ceremony]]
     [app.pages.rsvp :refer [rsvp]]
+    [app.pages.toronto :refer [toronto]]
     [goog.events :as events]
     [goog.history.EventType :as EventType]
     [reagent.core :as r]
@@ -40,6 +41,9 @@
   (defroute "/ceremony" []
     (swap! app-state assoc :page :ceremony))
 
+  (defroute "/visiting-toronto" []
+    (swap! app-state assoc :page :toronto))
+
   (defroute "/rsvp" []
     (swap! app-state assoc :page :rsvp))
 
@@ -58,6 +62,9 @@
 (defmethod current-page :ceremony []
   [ceremony])
 
+(defmethod current-page :toronto []
+  [toronto])
+
 (defmethod current-page :rsvp []
   [rsvp])
 
@@ -69,16 +76,19 @@
 ;; -----------------------------------------------------------------------------
 (def menu-list
   (list
-    {:page   :home
+    {:page  :home
      :title "Home"
      :url   "#/"}
-    {:page   :our-story
+    {:page  :our-story
      :title "Our Story"
      :url   "#/our-story"}
-    {:page   :ceremony
+    {:page  :ceremony
      :title "Ceremony"
      :url   "#/ceremony"}
-    {:page   :rsvp
+    {:page  :toronto
+     :title "Toronto"
+     :url   "#/toronto"}
+    {:page  :rsvp
      :title "RSVP"
      :url   "#/rsvp"}))
 

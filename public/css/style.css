@@ -73,12 +73,16 @@ footer {
 
 h1 {
   font-weight: bolder;
-  font-size: 300%;
+  font-size: 200%;
 }
 
 h2 {
   font-weight: bolder;
   font-size: 200%;
+}
+
+h3 {
+  font-size: 120%;
 }
 
 p {
@@ -249,9 +253,43 @@ h2.text-align-center {
   margin: 10px 0 10px 0;
 }
 
+
 /**
- * Ceremony info
+ * OUR STORY
  */
+
+.our_story__text {
+  width: 70%;
+  margin: auto;
+}
+
+.our_story__text p {
+  line-height: 150%;
+}
+
+.mui_icon {
+  color: #8371b1;
+}
+
+.dot_icon {
+  color: #8e8a98;
+}
+
+/**
+ * Ceremony
+ */
+
+.ceremony_details__text p {
+  line-height: 120%;
+}
+
+.info-text__block {
+  line-height: 150%;
+}
+
+.map__button {
+  text-align: center;
+}
 
 .ceremony_details__text {
   width: 70%;
@@ -284,22 +322,50 @@ h2.text-align-center {
   border: 1px solid black;
 }
 
-
 /**
- * OUR STORY
+ * Toronto
  */
 
-.our_story__text {
+.paragraph__text h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #8371b1;
+}
+
+.paragraph__text h3 {
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+
+.visiting_toronto__text {
   width: 70%;
   margin: auto;
 }
 
-.mui_icon {
+a.links {
   color: #8371b1;
+  font-weight: bold;
+  text-decoration: underline dotted;
 }
 
-.dot_icon {
-  color: #8e8a98;
+p.title {
+  font-weight: 900;
+  font-size: large;
+}
+
+p.description {
+  line-height: 120%;
+}
+
+.list_circle {
+  width: 95%;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.list_circle ul li {
+  list-style: circle inside;
+  line-height: 120%;
 }
 
 /**
@@ -319,7 +385,7 @@ h2.text-align-center {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   #app {
