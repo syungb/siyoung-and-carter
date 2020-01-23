@@ -27,7 +27,7 @@
          :desc "Year 1, at Kensinton Market"}
         {:id   1
          :src  "/img/year_04.jpg"
-         :desc "Year 4, at some party"}
+         :desc "Year 4, at World Wide Short Film Festival Party"}
         {:id   2
          :src  "/img/year_06.jpg"
          :desc "Year 6, working together at Tiff"}
