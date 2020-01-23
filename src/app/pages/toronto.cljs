@@ -18,7 +18,8 @@
       "For those looking for something a little more fancy and unique
        (but also more pricey) Toronto has a number of boutique hotels. Check out "
       [:a.links
-       {:href "https://www.blogto.com/toronto/the_best_boutique_hotels_in_toronto/"}
+       {:href   "https://www.blogto.com/toronto/the_best_boutique_hotels_in_toronto/"
+        :target "_blank"}
        "this list"]
       " for suggestions."]]
     [:li
@@ -26,6 +27,7 @@
      [:p.description
       "For the classic Grand Canadian Railway Hotel Experience."]]
     [:li
+     [:p.title "Other Options?"]
      [:p.description
       "And of course, there are downtown locations of recognizable chains like
        Hilton Garden Inn or Holiday Inn."]]]])
@@ -39,34 +41,38 @@
     [:li
      [:p.title "TTC"]
      [:p.description
-      " - This is the public transit system for Toronto, with subways,
+      "This is the public transit system for Toronto, with subways,
       streetcars, and buses. You can pay fares with cash, but buses and
       streetcars will require exact change. The best option would probably
       be to get a "
       [:a.links
-       {:href "https://www.prestocard.ca/en/about/presto-ticket"}
+       {:href   "https://www.prestocard.ca/en/about/presto-ticket"
+        :target "_blank"}
        "Presto Ticket day pass"]
       ", available at subway stations or Shoppers Drug Mart locations."]]
     [:li
      [:p.title "Rideshares"]
      [:p.description
-      " - Both Uber and Lyft are ubiquitous in Toronto, so if you have the app,
+      "Both Uber and Lyft are ubiquitous in Toronto, so if you have the app,
       you should have no trouble hailing a ride. If you’d rather not use these
       companies, there are also plenty of traditional taxi cabs. "
       [:a.links
-       {:href "http://www.becktaxi.com"}
+       {:href   "http://www.becktaxi.com"
+        :target "_blank"}
        "Beck Taxi"]
       " and "
       [:a
-       {:href "https://co-opcabs.com/"}
+       {:href   "https://co-opcabs.com/"
+        :target "_blank"}
        "Co-Op Cabs"]
       " both have big fleets."]]
     [:li
      [:p.title "Bike Share"]
      [:p.description
-      " - Biking is a great way to see the city! "
+      "Biking is a great way to see the city! "
       [:a.links
-       {:href "https://bikesharetoronto.com/"}
+       {:href   "https://bikesharetoronto.com/"
+        :target "_blank"}
        "Bike Share Toronto"]
       " lets you rent bikes from docking stations all over the city. Rent for a
       single ride, or get a pass."]]]])
@@ -87,25 +93,26 @@
     [:li
      [:p.title "Visit a museum"]
      [:p.description
-      " - The AGO, ROM, Gardiner, and Aga Khan are all great museums to visit."]]
+      "The AGO, ROM, Gardiner, and Aga Khan are all great museums to visit."]]
     [:li
      [:p.title "Toronto Island"]
      [:p.description
-      " - Take the ferry out to the Island for some lovely parks and a nice
+      "Take the ferry out to the Island for some lovely parks and a nice
       view of the skyline."]]
     [:li
      [:p.title "Watch a movie"]
      [:p.description
-      " - Siyoung and I met while volunteering at a film festival, and Toronto
+      "Siyoung and I met while volunteering at a film festival, and Toronto
       is a great city for cinema lovers. If you’d like to check out an
       independent cinema, there are a number to choose from: TIFF Bell Lightbox,
       Hot Docs, The Paradise, The Royal, The Revue, The Fox, to name a few."]]
     [:li
      [:p.title "See some live music"]
      [:p.description
-      " - If you’re looking for concert listings "
+      "If you’re looking for concert listings "
       [:a.links
-       {:href "https://nowtoronto.com/search/event/music/#page=1"}
+       {:href   "https://nowtoronto.com/search/event/music/#page=1"
+        :target "_blank"}
        "NOW Magazine"]
       " usually has a pretty comprehensive list of who is playing on a given date."]]]])
 
@@ -116,16 +123,16 @@
     [:li
      [:p.title "Explore the city"]
      [:p.description
-      " - This is a bit of a no-brainer, but Toronto really does have a lot of
+      "This is a bit of a no-brainer, but Toronto really does have a lot of
       neighborhoods that are fun to walk around in. Places like Kensington,
       Chinatown, Koreatown, Queen West, and the Distillery District are worth
       a visit."]]
     [:li
      [:p.title "Allen Gardens"]
      [:p.description
-      " - "
       [:a.links
-       {:href "https://www.toronto.ca/explore-enjoy/parks-gardens-beaches/gardens-and-horticulture/conservatories/allan-gardens-conservatory/"}
+       {:href   "https://www.toronto.ca/explore-enjoy/parks-gardens-beaches/gardens-and-horticulture/conservatories/allan-gardens-conservatory/"
+        :target "_blank"}
        "This indoor botanical garden"]
       "  is a really cool destination. The oldest parts are over 100 years old,
       and admission is free! A great option when the weather is bad and you
@@ -148,10 +155,11 @@
             park"]
        [:li "For some great hiking destinations, including some picturesque
             ravines, "
-            [:a
-             {:href "https://www.blogto.com/sports_play/2014/09/the_top_5_ravines_in_toronto/"}
-             "these websites'"]
-            " lists offer many good options."]]]]]])
+        [:a
+         {:href   "https://www.blogto.com/sports_play/2014/09/the_top_5_ravines_in_toronto/"
+          :target "_blank"}
+         "these websites'"]
+        " lists offer many good options."]]]]]])
 
 (defn toronto []
   [:div.visiting_toronto__text

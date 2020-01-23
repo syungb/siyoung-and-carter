@@ -1,12 +1,14 @@
 (ns app.pages.ceremony
   (:require
-    ["@material-ui/core/Button" :default Button]))
+    ["@material-ui/core/Button" :default Button]
+    ["@material-ui/icons/Map" :default Map]
+    ["@material-ui/icons/CalendarToday" :default CalendarToday]))
 
 (def wedding-detail-en
   "We will be holding a formal ceremony and reception at the Grace Venue in Toronto on Saturday, May 16, 2020 at 4PM.
    We will start with a nonsectarian ceremony, followed by Passed Hors D'oeuvres before the full course dinner for our reception.
    There is no specific dress code.
-   Please join us as we celebrate our love with a night full of eating and drinking with great company")
+   Please join us as we celebrate our love with a night full of eating and drinking with great company!")
 
 (def wedding-detail-kr
   "저희 결혼식은 2020년 5월 16일 토요일 오후 4, 캐나다 토론토 그레이스베뉴에 진행될 예정입니다.
@@ -22,19 +24,25 @@
     [:h3.text-align-center
      "SATURDAY, MAY 16TH 2020" [:br]
      "4:00 PM - Late Night"]
-    [:p.text-align-center
+    [:h3.text-align-center
      "Grace Venue" [:br]
      "150 Symes Rd Unit #130" [:br]
      "Toronto, ON M6N 0B1"]]
    [:div.map__button
-    [:p "We've attached an iCalendar/Google Calendar invite with all of the necessary information. "
-     [:a {:href "/files/siyoung-carter-wedding.ics"} "Click Here!"]]
     [:> Button
      {:color   :primary
       :variant :outlined
       :href    "https://goo.gl/maps/oMrNLy9Qox8rs6Kt7"
       :target  "_blank"}
-     "VIEW MAP"]]])
+     [:> Map]
+     "VIEW MAP"]]
+   [:div.calendar_link__block
+    [:p
+     [:> CalendarToday
+      {:class "mui_icon calendar"
+       :font-size :small}]
+     "We've attached an iCalendar/Google Calendar invite with all of the necessary information. "
+     [:a.calendar__link {:href "/files/siyoung-carter-wedding.ics"} "Click Here!"]]]])
 
 ;; TODO -- make calendar file to upload
 

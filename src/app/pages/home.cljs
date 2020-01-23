@@ -16,6 +16,4 @@
 (defn home
   []
   [:div.home
-   [main-photo]
-   [:div.main__text
-    [:span "Welcome to Siyoung and Carter's Wedding Page"]]])
+   [main-photo]])

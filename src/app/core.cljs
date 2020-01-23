@@ -9,6 +9,7 @@
     [app.pages.toronto :refer [toronto]]
     [goog.events :as events]
     [goog.history.EventType :as EventType]
+    ["@material-ui/icons/Menu" :default Menu]
     [reagent.core :as r]
     [secretary.core :as secretary]))
 
@@ -134,7 +135,10 @@
          (if (= menu-click "closed")
            (reset! nav-menu "opened")
            (reset! nav-menu "closed")))}
-      "Menu"]]]))
+      [:> Menu
+       {:class "menu--icon"
+        :font-size :small}]
+      " Menu"]]]))
 
 
 (defn header

@@ -238,11 +238,9 @@ ul.mobile-nav__ul--links {
 
 .text__block {
   color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0,0,0,.5)
+  background-color: rgba(131,113,177,.8);
+  padding: 5px;
+  letter-spacing: 1.5px;
 }
 
 .text-align-center {
@@ -261,6 +259,10 @@ h2.text-align-center {
 .our_story__text {
   width: 70%;
   margin: auto;
+}
+
+.our_story__text h2 {
+  color: #685A8D;
 }
 
 .our_story__text p {
@@ -283,7 +285,12 @@ h2.text-align-center {
   line-height: 120%;
 }
 
-.info-text__block {
+.info-text__block h2 {
+  line-height: 200%;
+  color: #685A8D;
+}
+
+.info-text__block h3 {
   line-height: 150%;
 }
 
@@ -292,7 +299,7 @@ h2.text-align-center {
 }
 
 .ceremony_details__text {
-  width: 70%;
+  width: 90%;
   margin: auto;
 }
 
@@ -307,8 +314,9 @@ h2.text-align-center {
   color: black;
 }
 
+
 .map__button {
-  margin: 10px;
+  margin: 20px;
 }
 
 .map__button a {
@@ -322,6 +330,21 @@ h2.text-align-center {
   border: 1px solid black;
 }
 
+a.calendar__link {
+  color: #685A8D;
+  border: none;
+}
+
+a.calendar__link:hover {
+  color: white;
+  background: #474c82;
+}
+
+.mui_icon.calendar {
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
 /**
  * Toronto
  */
@@ -330,27 +353,36 @@ h2.text-align-center {
   padding-top: 20px;
   padding-bottom: 10px;
   color: #8371b1;
+  letter-spacing: 2px;
 }
 
 .paragraph__text h3 {
   line-height: 120%;
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .visiting_toronto__text {
-  width: 70%;
+  width: 90%;
   margin: auto;
 }
 
 a.links {
   color: #8371b1;
-  font-weight: bold;
-  text-decoration: underline dotted;
+  font-weight: bolder;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+a.links:hover {
+  color: white;
+  background: #474c82;
 }
 
 p.title {
   font-weight: 900;
   font-size: large;
+  letter-spacing: 1px;
 }
 
 p.description {
@@ -374,7 +406,6 @@ p.description {
 
 .rsvp {
   margin: auto;
-  /*height: auto;*/
 }
 
 /* MOBILE MENU */
@@ -390,7 +421,7 @@ p.description {
 
   #app {
     margin: 0 auto;
-    padding: 10px;
+    padding: 0;
     border-style: none;
   }
 
@@ -414,13 +445,23 @@ p.description {
   }
 
   .mobile-nav__links_container {
+    padding-top:20px;
+    padding-bottom: 20px;
     font-family: Roboto, sans-serif;
+    background-color: #D9D4E7;
+    margin-left: -.4rem;
+    margin-right: -.4rem;
+    line-height: 120%;
+  }
+
+  .menu--icon {
+    position: relative;
+    vertical-align: text-bottom;
   }
 
   .mobile-menu__link {
     display: block;
     margin: 0;
-    /*line-height: 1.6em;*/
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
@@ -429,6 +470,8 @@ p.description {
     border-bottom-style: solid;
     border-bottom-color: black;
     visibility: visible;
+    font-weight: 900;
+    min-height: 20px;
   }
 
   /* MENU LIST */
