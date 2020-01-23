@@ -5,10 +5,8 @@
     ["@material-ui/icons/CalendarToday" :default CalendarToday]))
 
 (def wedding-detail-en
-  "We will be holding a formal ceremony and reception at the Grace Venue in Toronto on Saturday, May 16, 2020 at 4PM.
-   We will start with a nonsectarian ceremony, followed by Passed Hors D'oeuvres before the full course dinner for our reception.
-   There is no specific dress code.
-   Please join us as we celebrate our love with a night full of eating and drinking with great company!")
+  "We will be holding our ceremony and reception at the Grace Venue in Toronto on Saturday, May 16, 2020 at 4PM.
+   We will start with the ceremony, followed by passed hors d'oeuvres before the full course dinner. There is no specific dress code. Please join us as we celebrate our love with a night full of eating and drinking with great company!")
 
 (def wedding-detail-kr
   "저희 결혼식은 2020년 5월 16일 토요일 오후 4, 캐나다 토론토 그레이스베뉴에 진행될 예정입니다.
@@ -36,7 +34,7 @@
       :target  "_blank"}
      [:> Map]
      "VIEW MAP"]]
-   [:div.calendar_link__block
+   [:div {:class "calendar_link__block text-align-center"}
     [:p
      [:> CalendarToday
       {:class "mui_icon calendar"

@@ -115,7 +115,7 @@ header {
 
 footer {
   grid-column: span 2;
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
   text-align: center;
   font-size: 1.0em;
   vertical-align: middle;
@@ -419,6 +419,10 @@ p.description {
     font-size: 25px;
   }
 
+  footer {
+    padding: 15px
+  }
+
   #app {
     margin: 0 auto;
     padding: 0;
@@ -426,11 +430,11 @@ p.description {
   }
 
   .nav_desktop {
-    margin: 0 auto;
+    margin: 0 auto -10px auto;
   }
 
   .logo {
-    margin: 10px auto;
+    margin-top: 20px;
     font-size: inherit;
   }
 
@@ -445,13 +449,17 @@ p.description {
   }
 
   .mobile-nav__links_container {
-    padding-top:20px;
-    padding-bottom: 20px;
+    padding-top:5px;
+    padding-bottom: 10px;
     font-family: Roboto, sans-serif;
     background-color: #D9D4E7;
     margin-left: -.4rem;
     margin-right: -.4rem;
     line-height: 120%;
+  }
+
+  .mobile-nav__ul--links.menu-open {
+    margin-top: 10px;
   }
 
   .menu--icon {

@@ -61,7 +61,7 @@
         :target "_blank"}
        "Beck Taxi"]
       " and "
-      [:a
+      [:a.links
        {:href   "https://co-opcabs.com/"
         :target "_blank"}
        "Co-Op Cabs"]
@@ -155,7 +155,7 @@
             park"]
        [:li "For some great hiking destinations, including some picturesque
             ravines, "
-        [:a
+        [:a.links
          {:href   "https://www.blogto.com/sports_play/2014/09/the_top_5_ravines_in_toronto/"
           :target "_blank"}
          "these websites'"]
