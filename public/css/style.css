@@ -308,12 +308,12 @@ h2.text-align-center {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .info__block .text__block {
   color: black;
 }
-
 
 .map__button {
   margin: 20px;
@@ -343,6 +343,16 @@ a.calendar__link:hover {
 .mui_icon.calendar {
   vertical-align: bottom;
   margin-right: 5px;
+}
+
+.wedding_registry {
+  width: 90%;
+  margin: auto;
+  border-top: 3px solid rgb(217, 217, 217);
+}
+
+.wedding_registry .info-text__block {
+  margin-top: 20px;
 }
 
 /**

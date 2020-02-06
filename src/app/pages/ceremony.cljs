@@ -14,6 +14,15 @@
   특별한 드레스 코드는 없습니다.
   결혼식과 합께 이루어지는 피로연 파티에도 참석 부탁드립니다.")
 
+(defn wedding-registry []
+  [:div.wedding_registry
+   [:div.info-text__block
+    [:h2 "Wedding Registry"]
+    [:p.description
+     "Though you may wish to send us a gift, we already have plenty of material objects in our lives, and do not require more."]
+    [:p.description
+     "Your attendance is truly the best gift you could give us! We know many of you will be travelling from far away, and we appreciate the effort it takes to get here. All your love, friendship, and support means the world to us!"]]])
+
 (defn info-block []
   [:div.info__block
    [:div.info-text__block
@@ -49,6 +58,7 @@
    [:div.ceremony_details__text
     [:p.text-align-center wedding-detail-en]
     [:p.text-align-center wedding-detail-kr]]
-   [info-block]])
+   [info-block]
+   [wedding-registry]])
 
 
