@@ -5,21 +5,33 @@
     ["@material-ui/icons" :as mui-icons]))
 
 (def about-us
-  (list {:ind   1
-         :parag "while we were both volunteering
+  (list
+    {:ind   1
+     :parag "while we were both volunteering
                 at the Toronto International Film Festival. Among of thousands
                 of other volunteers and volunteer shifts, a stroke of good
                 fortune saw us scheduled to work together towards the end of
                 the festival. We hit it off right away, and the festival wrap
                 party was our first (unofficial) date. Many more dates soon
                 followed, and it was clear we had found love! "}
-        {:ind   2
-         :parag "When we met, we had both come to Canada as students. Carter
+    {:ind   2
+     :parag "저희는 2008년 토론토 국제 영화제에서 만났습니다. 수천명의 자원봉사자들과 수백개의
+         자원봉사 스케줄이 있는 가운데, 저희는 운이좋게도 영화제 마지막날 뜻하지 않은 행운으로
+         만날 수 있었습니다. 저희는 처음부터 서로 너무도 잘 맞았고, 영화제가 끝나고 이를 마무리하는
+         파티가 저희의 비공식 첫 데이트였습니다. 그다음 많은 데이트와 함게 저희는 서로를 사랑하고
+         있다는걸 확신할 수 있었습니다."}
+    {:ind   3
+     :parag "When we met, we had both come to Canada as students. Carter
                  came from the US to study film at the University of Toronto.
                  And Siyoung transferred from Jeonbuk University in Korea to
                  U of T to complete her degree in Astrophysics. After finding
                  each other here in Toronto, we decided to make this city our
-                 home. "}))
+                 home. "}
+    {:ind   4
+     :parag "처음 만난 해 저희는 둘다 캐나다에서 학생신분이었습니다. 카터는 미국에서 캐나다로 건너와
+     토론토대학에서 영화를 공부하고 있었고, 시영이는 한국에서 전북대학교를 다니다 토론토대학으로
+     편입하여 천체물리학 학사를 마쳤습니다. 그이후 서로를 만나게된 토론토를 저희의 보금자리로 정하게
+     되었습니다."}))
 
 (def photos
   (list {:id   0
