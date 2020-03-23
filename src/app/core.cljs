@@ -45,8 +45,8 @@
   (defroute "/toronto" []
     (swap! app-state assoc :page :toronto))
 
-  (defroute "/rsvp" []
-    (swap! app-state assoc :page :rsvp))
+  #_(defroute "/rsvp" []
+      (swap! app-state assoc :page :rsvp))
 
   (hook-browser-navigation!))
 
@@ -66,8 +66,9 @@
 (defmethod current-page :toronto []
   [toronto])
 
-(defmethod current-page :rsvp []
-  [rsvp])
+(comment
+  (defmethod current-page :rsvp []
+    [rsvp]))
 
 (defmethod current-page :default []
   [:div])
@@ -88,10 +89,7 @@
      :url   "#/ceremony"}
     {:page  :toronto
      :title "Toronto"
-     :url   "#/toronto"}
-    {:page  :rsvp
-     :title "RSVP"
-     :url   "#/rsvp"}))
+     :url   "#/toronto"}))
 
 (defn menu []
   (into

@@ -9,10 +9,9 @@
           :src "/img/main_photo.jpg"
           :alt "Carter and Siyoung in Yosemite 2019"}]
    [:div.text__block
-    [:h2.text-align-center.date "Saturday, May 16th, 2020"]
-    [:h2.text-align-center.date "2020년 5월 16일 토요일"]
+    [:h2.text-align-center.date "TBD, 2021"]
+    [:h2.text-align-center.date "2021년 날짜미정"]
     [:h2.text-align-center.venue "Grace Venue, Toronto"]]])
-
 
 (defn home
   []
