@@ -16,8 +16,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -33,11 +31,6 @@ ol, ul {
 }
 blockquote, q {
 	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
 }
 table {
 	border-collapse: collapse;
@@ -62,13 +55,9 @@ button:focus {
 **/
 
 body {
-  font-family: "DejaVu Serif", Georgia, "Times New Roman", Times, serif, "Abril Fatface", Roboto, sans-serif;
-  margin:0 auto;
-}
-
-header,
-footer {
-  font-family: "Abril Fatface", serif;
+  font-family: 'Bentham', serif;
+  margin: 0 auto;
+  background-color: #f8e9e9;
 }
 
 h1 {
@@ -94,12 +83,8 @@ p {
 }
 
 #app {
-  max-width: 900px;
-  margin: 50px auto;
-  border-style: solid;
-  border-color: #8e8a98;
-  border-width: 3px;
-  padding: 20px;
+  max-width: 960px;
+  margin: 20px auto;
 }
 
 a {
@@ -109,10 +94,6 @@ a {
   color: #000000;
 }
 
-header {
-  background-color: transparent;
-}
-
 footer {
   grid-column: span 2;
   padding: 20px 0 10px 0;
@@ -120,22 +101,21 @@ footer {
   font-size: 1.0em;
   vertical-align: middle;
   margin-top: 20px;
-  border-style: groove;
-  border-top-width: 2px;
+  border-top: 2px solid #7c6957;
 }
 
 span.footer__text {
-  color: #585858;
+  color: #7c6957;
 }
 
 .app__container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: .4rem;
-  padding-right: .4rem;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  background-color: white;
+
+  padding: 25px;
+  border: 4px solid #b2967d;
 }
 
 
@@ -146,7 +126,6 @@ span.footer__text {
 .nav_desktop {
   flex-direction: row;
   margin-top: 30px;
-  font-family: "Abril Fatface", serif;
 }
 
 .logo {
@@ -158,18 +137,19 @@ span.footer__text {
 }
 
 .logo a {
-  color: #8371b1;
+  color: #7c6957;
 }
 
 .nav__links_container {
   font-size: 1.2em;
-  padding: 5px 0;
+  padding: 5px 10px;
   line-height: 2;
 }
 
 .nav__ul--link {
   display: block;
   margin-block-start: 1em;
+  float: right;
 }
 
 .nav__ul--link li {
@@ -179,23 +159,23 @@ span.footer__text {
 
 a.nav__a--link {
   text-decoration: none;
-  color: #8e8a98;
+  color: #7c6957;
 }
 
 a.nav__a--link:hover {
-  color: #8371b1;
+  color: #594b3e;
   -webkit-transform: rotateZ(-30deg);
   -ms-transform: rotateZ(-30deg);
   transform: rotateZ(-30deg);
 }
 
 a.nav__a--link.active {
-  color: #8371b1;
+  color: #473c32;
   text-decoration-line: underline;
 }
 
 
-/* MOBILE MENU WIP */
+/* MOBILE MENU */
 .mobile-menu__link {
   overflow: hidden;
   visibility: hidden;
@@ -216,7 +196,6 @@ ul.mobile-nav__ul--links {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  font-family: Roboto, sans-serif;
 }
 
 .main__text {
@@ -238,7 +217,7 @@ ul.mobile-nav__ul--links {
 
 .text__block {
   color: white;
-  background-color: rgba(131,113,177,.8);
+  background-color: #7c6957;
   padding: 5px;
   letter-spacing: 1.5px;
 }
@@ -262,7 +241,7 @@ h2.text-align-center {
 }
 
 .our_story__text h2 {
-  color: #685A8D;
+  color: #7c6957;
 }
 
 .our_story__text p {
@@ -270,11 +249,11 @@ h2.text-align-center {
 }
 
 .mui_icon {
-  color: #8371b1;
+  color: #7c6957;
 }
 
 .dot_icon {
-  color: #8e8a98;
+  color: #7c6957;
 }
 
 /**
@@ -287,7 +266,7 @@ h2.text-align-center {
 
 .info-text__block h2 {
   line-height: 200%;
-  color: #685A8D;
+  color: #7c6957;
 }
 
 .info-text__block h3 {
@@ -326,19 +305,19 @@ h2.text-align-center {
 
 .map__button a:hover {
   color: white;
-  background: #474c82;
+  background: #7c6957;
   border: 1px solid black;
 }
 
-a.calendar__link {
-  color: #685A8D;
-  border: none;
-}
+/*a.calendar__link {*/
+/*  color: #685A8D;*/
+/*  border: none;*/
+/*}*/
 
-a.calendar__link:hover {
-  color: white;
-  background: #474c82;
-}
+/*a.calendar__link:hover {*/
+/*  color: white;*/
+/*  background: #474c82;*/
+/*}*/
 
 .mui_icon.calendar {
   vertical-align: bottom;
@@ -362,7 +341,7 @@ a.calendar__link:hover {
 .paragraph__text h2 {
   padding-top: 20px;
   padding-bottom: 10px;
-  color: #8371b1;
+  color: #7c6957;
   letter-spacing: 2px;
 }
 
@@ -378,7 +357,7 @@ a.calendar__link:hover {
 }
 
 a.links {
-  color: #8371b1;
+  color: #594b3e;
   font-weight: bolder;
   text-decoration: underline;
   letter-spacing: 1px;
@@ -386,7 +365,7 @@ a.links {
 
 a.links:hover {
   color: white;
-  background: #474c82;
+  background: #594b3e;
 }
 
 p.title {
@@ -430,7 +409,7 @@ p.description {
   }
 
   footer {
-    padding: 15px
+    /*padding: 15px*/
   }
 
   #app {
@@ -459,13 +438,10 @@ p.description {
   }
 
   .mobile-nav__links_container {
-    padding-top:5px;
-    padding-bottom: 10px;
-    font-family: Roboto, sans-serif;
-    background-color: #D9D4E7;
-    margin-left: -.4rem;
-    margin-right: -.4rem;
+    margin: -.5rem -.4rem 0 -.4rem;
+    padding-bottom: .5rem;
     line-height: 120%;
+    background-color: #b2967d;
   }
 
   .mobile-nav__ul--links.menu-open {
@@ -485,8 +461,6 @@ p.description {
     letter-spacing: 2px;
     padding: 0 0 15px;
     text-align: center;
-    border-bottom-style: solid;
-    border-bottom-color: black;
     visibility: visible;
     font-weight: 900;
     min-height: 20px;
@@ -499,7 +473,7 @@ p.description {
     display: block;
     margin: 0;
     font-size: 16px !important;
-    color: rgba(28,28,28,.7);
+    color: white;
   }
 
   ul.mobile-nav__ul--links {
@@ -507,8 +481,6 @@ p.description {
     visibility: hidden;
     text-align: center;
     margin: 0 0 10px;
-    border-bottom-style: solid;
-    border-bottom-color: #717171;
     letter-spacing: 2px;
     text-transform: uppercase;
     max-height: 0;
@@ -525,11 +497,11 @@ p.description {
   }
 
   a.mobile-nav__a--link {
-    color: #717171;
+    color: white;
   }
 
   a.mobile-nav__a--link.active {
-    color: #8371b1;
+    color: #352d25;
     text-decoration-line: underline;
   }
 
@@ -539,7 +511,6 @@ p.description {
 
   .main {
     margin: 10px;
-    font-family: Roboto, sans-serif;
   }
 
   iframe.rsvp__form {
