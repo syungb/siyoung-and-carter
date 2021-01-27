@@ -5,16 +5,16 @@
     ["@material-ui/icons/CalendarToday" :default CalendarToday]))
 
 (def wedding-detail-en
-  "We will be holding our ceremony and reception at the Grace Venue in Toronto in 2021.
+  "We will be holding our ceremony and reception at the Grace Venue in Toronto on June 18th, 2022.
    We will start with the ceremony, followed by passed hors d'oeuvres before the full course dinner. There is no specific dress code. Please join us as we celebrate our love with a night full of eating and drinking with great company!")
 
 (def wedding-detail-kr
-  "저희 결혼식은 2021년, 캐나다 토론토 그레이스베뉴에 진행될 예정입니다.
+  "저희 결혼식은 2022년 6월 18일, 캐나다 토론토 그레이스베뉴에서 진행될 예정입니다.
   식순은 결혼예식으로 시작하여, 저녁만찬이 있을예정입니다.
   특별한 드레스 코드는 없습니다.
   결혼식과 함께 이루어지는 피로연 파티에도 참석 부탁드립니다.")
 
-(defn wedding-registry []
+(def wedding-registry
   [:div.wedding_registry
    [:div.info-text__block
     [:h2 "Wedding Registry"]
@@ -25,13 +25,13 @@
     [:p.description
      "저희에게 축하의 의미로 선물을 주고 싶어 하시는 마음은 감사하지만, 저희는 이미 필요한것이 없을만큼 충분합니다. 결혼식에 참석해 주시는것만으로도 저희에겐 최고의 선물이 될것입니다. 또한 먼곳에서 저희를 위해 와주시는 것만으로도 너무 감사합니다. 마음만 받겠습니다."]]])
 
-(defn info-block []
+(def info-block
   [:div.info__block
    [:div.info-text__block
     [:h2.text-align-center
      "Ceremony and Reception"]
     [:h3.text-align-center
-     "SATURDAY, 2021" [:br]
+     "SATURDAY, June 18th 2022" [:br]
      "4:00 PM - Late Night"]
     [:h3.text-align-center
      "Grace Venue" [:br]
@@ -59,7 +59,7 @@
    [:div.ceremony_details__text
     [:p.text-align-center wedding-detail-en]
     [:p.text-align-center wedding-detail-kr]]
-   [info-block]
-   [wedding-registry]])
+   info-block
+   wedding-registry])
 
 

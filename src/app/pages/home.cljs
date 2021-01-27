@@ -9,8 +9,8 @@
           :src "/img/main_photo.jpg"
           :alt "Carter and Siyoung in Yosemite 2019"}]
    [:div.text__block
-    [:h2.text-align-center.date "TBD, 2021"]
-    [:h2.text-align-center.date "2021년 날짜미정"]
+    [:h2.text-align-center.date "June 18th, 2022"]
+    [:h2.text-align-center.date "2022년 6월 18일"]
     [:h2.text-align-center.venue "Grace Venue, Toronto"]]])
 
 (defn home

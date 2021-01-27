@@ -152,7 +152,7 @@
 ;; FOOTER
 ;; -----------------------------------------------------------------------------
 (def copyright
-  "Copyright Ⓡ 2020 Siyoung Byun. All rights reserved.")
+  "Copyright Ⓡ 2021 Siyoung Byun. All rights reserved.")
 
 (defn footer
   []
