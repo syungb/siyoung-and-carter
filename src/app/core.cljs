@@ -11,6 +11,7 @@
     [goog.history.EventType :as EventType]
     ["@material-ui/icons/Menu" :default Menu]
     [reagent.core :as r]
+    [reagent.dom :as rdom]
     [secretary.core :as secretary]))
 
 ;; -----------------------------------------------------------------------------
@@ -176,6 +177,6 @@
 ;; -----------------------------------------------------------------------------
 (defn ^:export main []
   (app-routes)
-  (r/render
+  (rdom/render
     [app]
     (.getElementById js/document "app")))
