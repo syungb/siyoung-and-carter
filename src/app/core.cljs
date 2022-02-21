@@ -25,10 +25,9 @@
   (doto (Html5History.)
     (events/listen
       EventType/NAVIGATE
-      (fn [event]
+      (fn [^js/Object event]
         (secretary/dispatch! (.-token event))))
     (.setEnabled true)))
-
 
 ;; creating routes
 (defn app-routes []
@@ -46,8 +45,8 @@
   (defroute "/toronto" []
     (swap! app-state assoc :page :toronto))
 
-  #_(defroute "/rsvp" []
-      (swap! app-state assoc :page :rsvp))
+  (defroute "/rsvp" []
+    (swap! app-state assoc :page :rsvp))
 
   (hook-browser-navigation!))
 
@@ -67,9 +66,8 @@
 (defmethod current-page :toronto []
   [toronto])
 
-(comment
-  (defmethod current-page :rsvp []
-    [rsvp]))
+(defmethod current-page :rsvp []
+  [rsvp])
 
 (defmethod current-page :default []
   [:div])
@@ -90,7 +88,10 @@
      :url   "#/ceremony"}
     {:page  :toronto
      :title "Toronto"
-     :url   "#/toronto"}))
+     :url   "#/toronto"}
+    {:page  :rsvp
+     :title "RSVP"
+     :url   "#/rsvp"}))
 
 (defn menu []
   (into
