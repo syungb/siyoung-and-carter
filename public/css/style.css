@@ -521,6 +521,7 @@ p.description {
     top: 0;
     left:0;
     width: 100%;
+    min-height: 1700px;
   }
 
   /* Slideshow container */
