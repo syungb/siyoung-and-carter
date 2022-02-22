@@ -46,13 +46,13 @@
       :target  "_blank"}
      [:> Map]
      "VIEW MAP"]]
-   #_[:div {:class "calendar_link__block text-align-center"}
-      [:p
-       [:> CalendarToday
-        {:class "mui_icon calendar"
-         :font-size :small}]
-       "We've attached an iCalendar/Google Calendar invite with all of the necessary information. "
-       [:a.calendar__link {:href "/files/siyoung-carter-wedding.ics"} "Click Here!"]]]])
+   [:div {:class "calendar_link__block text-align-center"}
+    [:p
+     [:> CalendarToday
+      {:class "mui_icon calendar"
+       :font-size :small}]
+     "We've attached an iCalendar/Google Calendar invite with all of the necessary information. "
+     [:a.calendar__link {:href "/files/siyoung-carter-wedding.ics"} "Click Here!"]]]])
 
 (defn ceremony []
   [:div.ceremony

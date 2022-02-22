@@ -309,15 +309,15 @@ h2.text-align-center {
   border: 1px solid black;
 }
 
-/*a.calendar__link {*/
-/*  color: #685A8D;*/
-/*  border: none;*/
-/*}*/
+a.calendar__link {
+  color: #7c6957;
+  border: none;
+}
 
-/*a.calendar__link:hover {*/
-/*  color: white;*/
-/*  background: #474c82;*/
-/*}*/
+a.calendar__link:hover {
+  color: white;
+  background: #7c6957;
+}
 
 .mui_icon.calendar {
   vertical-align: bottom;
@@ -395,6 +395,10 @@ p.description {
 
 .rsvp {
   margin: auto;
+}
+
+.rsvp__form.google_form__embedded {
+  min-height: 1300px;
 }
 
 /* MOBILE MENU */
