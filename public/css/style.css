@@ -545,3 +545,7 @@ p.description {
     font-size: 0.9rem;
   }
 }
+
+.main__photo {
+	width: 80%;
+}
