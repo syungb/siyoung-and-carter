@@ -79,21 +79,23 @@
     "마음전하실 곳 (계좌번호)"]
    [:span.sk-wedding-account-info--number
     [:span.account_name
-     (if (= parent :mom)
-       "예금주: 박희숙 (모)"
-       "예금주: 변희섭 (부)")]
+     (if (= parent :dad)
+       "예금주: 변희섭 (부)"
+       "예금주: 박희숙 (모)")]
+
     [:div.account_area
-     [:span (if (= parent :mom)
-              "전북은행 604-22-0047360"
-              "전북은행 604-12-0436903")]
-     [copyable-button (if (= parent :mom)
-                        "604-22-0047360"
-                        "604-12-0436903")]]]])
+     [:span (if (= parent :dad)
+              "전북은행 604-12-0436903"
+              "전북은행 604-22-0047360")]
+     [copyable-button (if (= parent :dad)
+                        "604-12-0436903"
+                        "604-22-0047360")]]]])
 
 (defn simple-korean
   [parent]
   [:div.text-align-center
-   [main-photo]
+   (when-not (= parent :mini-ver)
+     [main-photo])
    [note]
    [intro]
    [ceremony-info]

@@ -55,6 +55,9 @@
   (defroute "/dad" []
             (swap! app-state assoc :page :dad))
 
+  (defroute "/mini-ver" []
+            (swap! app-state assoc :page :mini-ver))
+
   (hook-browser-navigation!))
 
 ;; creating a current-page multimethod that will return which page component
@@ -175,7 +178,8 @@
 (defn app []
   (cond
     (or (= :mom (@app-state :page))
-        (= :dad (@app-state :page)))
+        (= :dad (@app-state :page))
+        (= :mini-ver (@app-state :page)))
     [:div.app__container
      [header true]
      [simple-korean (@app-state :page)]]
