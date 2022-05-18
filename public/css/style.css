@@ -580,21 +580,14 @@ p.description {
 }
 
 .sk-wedding-intro--couple div {
-	position: relative;
 	overflow: hidden;
 }
 
 .sk-wedding-intro--couple .title {
-	float: left;
-	width: 48%;
-	padding-right: 20px;
-	text-align: right;
 	color: #757575;
 }
 
 .sk-wedding-intro--couple .name {
-	float: left;
-	width: 52%;
 	display: inline-block;
 	text-align: left;
 	padding-left: 5px;
@@ -604,7 +597,7 @@ p.description {
 	color: #2e2e2e;
 	margin-top: 20px;
 	letter-spacing: 1px;
-	font-size: 1.3em;
+	font-size: 1em;
 }
 
 .sk-wedding-intro--parents div {
