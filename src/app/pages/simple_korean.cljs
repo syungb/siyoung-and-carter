@@ -1,13 +1,27 @@
-(ns app.pages.simple-korean
-  (:require
-   [app.pages.our-story :as our-story]))
+(ns app.pages.simple-korean)
 
 (defn main-photo
   []
   [:div.sk-wedding-intro--main-photo
-   [:div.image_renderer
-    [:img {:class ["image_renderer__img" "main__photo"]
-           :src "/img/year_08.jpg"}]]])
+   [:img {:class ["image_renderer__img"]
+          :src "/img/sk_main.jpg"}]])
+
+(defn note
+  []
+  [:div.sk-wedding-note
+   [:div.thank-you
+    [:b
+     "감사합니다 ❤️"]]
+   [:div
+    "'우리'라는 이름으로"]
+   [:div
+    "아름다운 첫 시작을 하려 합니다."]
+   [:div
+    "사랑으로 함께 가는길,"]
+   [:div
+    "그 설레는 여정에"]
+   [:div
+    "소중한 여러분을 초대합니다"]])
 
 (def couple
   [:<>
@@ -78,12 +92,7 @@
   [parent]
   [:div.text-align-center
    [main-photo]
-   [:div.wrapper
-    [:div.logo
-     [:span.sk-wedding-gallery--title
-      "Gallery"]]
-    [our-story/photo-renderer]
-    [our-story/dot-renderer]]
+   [note]
    [intro]
    [ceremony-info]
    [account-info parent]])

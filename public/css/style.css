@@ -564,6 +564,16 @@ p.description {
 	margin: 20px 0;
 }
 
+.sk-wedding-note {
+	background-color: #f8e9e9;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+.sk-wedding-note div {
+	margin-bottom: 20px;
+}
+
 .sk-wedding-gallery--title {
 	font-size: 25px;
 }
